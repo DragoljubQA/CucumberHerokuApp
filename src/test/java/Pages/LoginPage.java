@@ -11,10 +11,10 @@ public class LoginPage {
     }
 
     @FindBy(id = "username")
-    public WebElement Username;
+    public WebElement UsernameField;
 
     @FindBy(id = "password")
-    public WebElement Password;
+    public WebElement PasswordField;
 
     @FindBy(css = ".fa.fa-2x.fa-sign-in")
     public WebElement LoginButton;
@@ -22,13 +22,13 @@ public class LoginPage {
     //-------------------------
 
     public void insertUsername(String username) {
-        Username.clear();
-        Username.sendKeys(username);
+        UsernameField.clear();
+        UsernameField.sendKeys(username);
     }
 
     public void insertPassword(String password) {
-        Password.clear();
-        Password.sendKeys(password);
+        PasswordField.clear();
+        PasswordField.sendKeys(password);
     }
 
     public void clickOnLoginButton() {
