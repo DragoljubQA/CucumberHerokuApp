@@ -59,8 +59,8 @@ public class StepsDefinition {
 
     @Then("User is not logged in")
     public void userIsNotLoggedIn() {
-        Assert.assertTrue(loginPage.Username.isDisplayed());
-        Assert.assertTrue(loginPage.Password.isDisplayed());
+        Assert.assertTrue(loginPage.UsernameField.isDisplayed());
+        Assert.assertTrue(loginPage.PasswordField.isDisplayed());
     }
 
 }
